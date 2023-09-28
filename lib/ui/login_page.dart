@@ -17,7 +17,14 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        title: Row(
+          children: [
+            const Text('Login'),
+            const SizedBox(width: 90), // Spasi antara judul dan "designed by"
+            const Text('Created by : Gilang',
+                style: TextStyle(fontSize: 12, color: Colors.white)),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(

@@ -16,7 +16,14 @@ class _ProdukDetailState extends State<ProdukDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Detail Produk'),
+        title: Row(
+          children: [
+            const Text('Detail Produk'),
+            const SizedBox(width: 90), // Spasi antara judul dan "designed by"
+            const Text('Created by : Gilang',
+                style: TextStyle(fontSize: 12, color: Colors.white)),
+          ],
+        ),
       ),
       body: Center(
         child: Column(

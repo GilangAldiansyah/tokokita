@@ -46,7 +46,18 @@ class _ProdukFormState extends State<ProdukForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(judul)),
+      appBar: AppBar(
+        title: Text(judul), // Judul yang dinamis
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 20.0, top: 20.0),
+            child: Text(
+              'Created by : Gilang', // Teks "designed by" yang tetap
+              style: TextStyle(fontSize: 12, color: Colors.white),
+            ),
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

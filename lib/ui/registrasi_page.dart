@@ -19,7 +19,14 @@ class _RegistrasiPageState extends State<RegistrasiPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Registrasi'),
+        title: Row(
+          children: [
+            const Text('Registrasi'),
+            const SizedBox(width: 90), // Spasi antara judul dan "designed by"
+            const Text('Created by : Gilang',
+                style: TextStyle(fontSize: 12, color: Colors.white)),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(

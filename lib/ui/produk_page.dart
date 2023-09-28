@@ -14,7 +14,14 @@ class _ProdukPageState extends State<ProdukPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('List Produk'),
+          title: Row(
+            children: [
+              const Text('Detail Produk'),
+              const SizedBox(width: 50), // Spasi antara judul dan "designed by"
+              const Text('Created by : Gilang',
+                  style: TextStyle(fontSize: 12, color: Colors.white)),
+            ],
+          ),
           actions: [
             Padding(
                 padding: const EdgeInsets.only(right: 20.0),
